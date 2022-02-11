@@ -3,11 +3,11 @@ export default function handler(req, res) {
     console.log('body: ', body)
   
     // Both of these are required.
-    if (!body.first || !body.last) {
-      return res.json({ data: 'First or last name not found' })
+    if (!body.first || !body.last || !body.location || !body.headline || !body.bio) {
+      return res.json({ data: 'You did not fill everything out' })
     }
   
     // Found the name.
-    res.json({ data: `${body.first} ${body.last}` })
+    res.json({ data: `${body.first} ${body.last} ${body.location} ${body.headline} ${body.bio}` })
   }
   
