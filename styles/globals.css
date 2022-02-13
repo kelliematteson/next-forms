@@ -3,10 +3,10 @@
 @tailwind utilities;
 
 .btn {
-    @apply bg-blue-500 hover:bg-blue-600 rounded-tl-lg rounded-br-lg text-white w-32 pt-4 pb-4 pr-8 pl-8 justify-self-end
+    @apply bg-blue-500 hover:bg-blue-600 rounded-tl-lg rounded-br-lg text-white w-32 pt-4 pb-4 pr-8 pl-8 justify-self-end shadow
 }
 .input {
-    @apply block w-full shadow py-3 px-4 placeholder-gray-500 focus:ring-blue-500 focus:border-blue-500 border-gray-300 rounded-md focus:outline-none focus:ring-2
+    @apply block w-full shadow py-3 px-4 placeholder-gray-500 focus:ring-green-600 focus:border-green-600 border-gray-400 rounded-md focus:outline-none focus:ring-2
 }
 .main-container {
     @apply py-16 bg-gray-50 px-4 sm:px-6 h-screen w-screen flex justify-center items-center
@@ -15,13 +15,13 @@
     @apply mx-auto w-full max-w-2xl rounded-xl bg-white p-8 shadow
 }
 .header {
-    @apply flex justify-center items-center flex-col
+    @apply flex justify-center items-center flex-col 
 }
 .title {
     @apply text-2xl font-semibold
 }
 .subtitle {
-    @apply font-light text-sm
+    @apply font-light text-xs pt-2
 }
 .form {
     @apply grid grid-cols-1 gap-y-6
@@ -31,4 +31,19 @@
 }
 inner-name-container {
     @apply flex-col flex-auto
+}
+.error-message {
+    @apply text-sm text-red-600
+}
+.outer-image {
+    @apply mt-1 flex items-center
+}
+.inner-image {
+    @apply inline-block h-12 w-12 rounded-full overflow-hidden bg-gray-100
+}
+.image-btn {
+    @apply border-solid border-2 border-blue-500 rounded text-xs pl-4 pr-4 pt-1 pb-1 text-blue-500
+}
+.skills-btn {
+    @apply pr-2 pl-2 pt-1 pb-1 mr-4 mt-2 bg-slate-200 hover:bg-slate-300 rounded
 }

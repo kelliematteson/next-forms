@@ -11,29 +11,49 @@ export default function Home(props){
            subtitle: 'We look forward to hearing from you.',
            fields: [
                {
+                   title: 'Picture',
+                   type: 'file',
+                   name: 'picture'
+               },
+               {
                   title: 'First Name',
                   type: 'text',
-                  name: 'firstname' 
+                  name: 'firstname',
+                  validationProps: {
+                      required: 'Please enter your first name'
+                  }
                }, 
                {
                    title: 'Last Name',
                    type: 'text',
-                   name: 'lastname'
+                   name: 'lastname',
+                   validationProps: {
+                    required: 'Please enter your last name'
+                }
                },
                {
                    title: 'Location',
                    type: 'text',
-                   name: 'location'
+                   name: 'location',
+                   validationProps: {
+                    required: 'Please enter your location'
+                }
                },
                {
                    title: 'Headline',
                    type: 'text',
-                   name: 'headline'
+                   name: 'headline',
+                   validationProps: {
+                    required: 'Please enter a headline'
+                }
                },
                {
                    title: 'Bio',
                    type: 'textarea',
-                   name: 'bio'
+                   name: 'bio',
+                   validationProps: {
+                    required: 'Please enter your bio'
+                }
                }
            ]
        }
